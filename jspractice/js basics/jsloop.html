@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <span>
+                Number:<input type="text" id="firstNumber"/> <br/>
+                <button onclick="sumNumbers()" id="btnAdd">Sum of numbers</button>
+                <label id="result"></label>
+            </span>
+        </div>
+        <footer>
+
+        </footer>
+        <script>
+              //var expenses = [200,300,150,430,620];
+              //    var count = expenses.length;
+        //    var sum = 0;
+        //    for(var i=0;i<count;i=i+1){
+        //     sum = sum + expenses[i];
+        //    }
+        // var sum = 0;
+        // for(var e of expenses){
+        //     sum = sum + e;
+        // }
+        //console.log(sum)
+              var students =[
+                {
+                    id:1,
+                    name:'appu'
+                },
+                {
+                    id:2,
+                    name:'ammu'
+                },
+                {
+                    id:3,
+                    name:'aparna'
+                }
+              ]
+        
+        for(var s of students){
+            console.log(s)
+        }
+        var stud = {
+            id:1,
+            name:'appu',
+            place:'kochi'
+        }
+        for(var prop in stud){
+            console.log(prop)
+        }
+        for(var key in stud){
+            console.log(key, stud[key])
+        }
+        console.log(stud['id'])
+        </script>
+    </body>
+</html>

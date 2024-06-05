@@ -1,0 +1,40 @@
+<html>
+  <head> </head>
+  <body>
+    <form action="url" method="post">
+      <fieldset>
+        <div>
+          <label>Username:</label>
+          <input type=""text"/><br />
+          <label>Password:</label>
+          <input type="password" />
+        </div>
+        <div>
+          <input type="button" value="Login" />
+          <button>Submit</button>
+        </div>
+        <div>
+          <label>Remember me:</label>
+          <input type="checkbox" />
+          OTP:<input type="checkbox" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>Address:<textarea rows="4"></textarea></div>
+        <div>
+          State:
+          <select>
+            <option value="KL">Kerala</option>
+            <option value="KA">Karnataka</option>
+          </select>
+          <label>Gender:</label>
+          Female:<input type="radio" id="female" name="gender" value="Female" />
+          Male:<input type="radio" id="male" name="gender" value="Male" />
+          <!--name should be common in radio button otherwise it will turn to checkbox-->
+          Other:<input type="radio" id="other" name="gender" value="Other" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

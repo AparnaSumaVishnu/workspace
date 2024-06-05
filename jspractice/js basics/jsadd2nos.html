@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UPCODE::This is HTML intro</title>
+    <script src="util.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div>
+      <h1 style="color: rgb(40, 20, 20)" onclick="addTwoNumber(100,20)">
+        This is just an intro
+      </h1>
+      <span>
+        We will learn details later<br />
+        First number: <input type="text" id="fNumber" /> <br />
+        Second number: <input type="text" id="sNumber" /> <br />
+        <button onclick="addTwoNumber()" id="btnAdd">Add two number</button
+        ><br />
+        <label id="result"></label>
+      </span>
+    </div>
+    <footer></footer>
+    <script>
+      function addTwoNumber() {//variables inside are local variables
+         var n1Element = document.getElementById("fNumber");
+         console.log(n1Element.value);
+         var n2Element = document.getElementById("sNumber");
+         console.log(n2Element.value);
+         var n1 = parseFloat(n1Element.value);
+         var n2 = parseFloat(n2Element.value);
+         var sum = n1 + n2;
+         document.getElementById("result").innerText = "Sum is:" + sum;
+         console.log(sum);
+      }
+    </script>
+  </body>
+</html>

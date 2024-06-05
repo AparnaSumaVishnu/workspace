@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <span>
+            </span>
+        </div>
+        <footer>
+        </footer>
+        <script>
+        var numbers = [24, 30, 50, 43, 26];
+        var count = numbers.length;
+        
+        function large() {
+            var largest = numbers[0];
+            for (var i = 1; i < numbers.length; i++) {
+                if (numbers[i] > largest) {
+                    largest = numbers[i];
+                }
+            }
+            return largest;
+        }
+        
+        console.log(large());
+        </script>
+    </body>
+</html>
+
+            

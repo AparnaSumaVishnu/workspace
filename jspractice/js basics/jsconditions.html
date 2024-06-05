@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Conditions
+        </title>
+        <script src="util.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <div>
+           <span>
+            Score:<input type="text" id="score"><br>
+            Place:<input type="text" id="place"><br>
+            Last Qualification:<input type="text" id="qualification"><br>
+            <input type="button" onclick="validate()" value="Validate">
+            <h1 id="result"></h1>
+           </span>
+        </div>
+        <footer>
+
+        </footer>
+        <script>
+            function validate(){
+                var MAX_SCORE = 50;
+                var cut_off = 35;
+                var score = parseInt(document.getElementById('score').value);
+                var place = document.getElementById('place').value;
+                var qualification = document.getElementById('qualification').value;
+
+                if(score === MAX_SCORE){
+                    var resultEl = document.getElementById('result');
+                    resultEl.innerText = "Outstanding!!";
+                    resultEl.style.color = 'green';
+                }
+
+                if((score >= cut_off || qualification === 'MBA') && place === 'kochi'){
+                    var resultEl = document.getElementById('result');
+                    resultEl.innerText = "You are eligible to apply for job";
+                    resultEl.style.color = 'yellow';
+                }
+                else if(qualification == "PHD"){
+                    var resultEl = document.getElementById('result');
+                    resultEl.innerText = "You are eligible to apply for job";
+                    resultEl.style.color = 'yellow';
+                }
+                else{
+                    var resultEl = document.getElementById('result');
+                    resultEl.innerText = "Sorry,You are not eligible to apply for job";
+                    resultEl.style.color = 'red';  
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Conditions</title>
+</head>
+<body>
+    <header></header>
+    <div>
+        <span></span>
+    </div>
+    <footer></footer>
+    <script>
+        // Declare the order objects
+        var order1 = {
+            orderNumber: 10011,
+            customerName: 'Muhammed',
+            customerMobile: '+911223331',
+            totalAmount: 25000
+        };
+
+        var order2 = {
+            orderNumber: 3411,
+            customerName: 'Rajesh',
+            customerMobile: '+94545331',
+            totalAmount: 48000
+        };
+
+        // Function to compare and log the details
+        function highamt() {
+            if (order1.totalAmount > order2.totalAmount) {
+                console.log(order1.customerName);
+                console.log(order1.totalAmount);
+                console.log(order1.totalAmount + order2.totalAmount);
+            } else {
+                console.log(order2.customerName);
+                console.log(order2.totalAmount);
+                console.log(order1.totalAmount + order2.totalAmount);
+            }
+        }
+
+        // Call the function to execute the comparison
+        highamt();
+    </script>
+</body>
+</html>
